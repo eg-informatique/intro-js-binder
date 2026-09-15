@@ -1,0 +1,9 @@
+# Fins de ligne LF dans le dépôt comme dans la copie de travail : les notebooks
+# sont copiés depuis 1m, un partage réseau aussi utilisé depuis Windows (CRLF).
+* text=auto eol=lf
+
+# postBuild est un script bash : un retour chariot empêcherait son exécution.
+postBuild text eol=lf
+
+# Les notebooks sont du JSON : normalisés en LF pour des diffs lisibles.
+*.ipynb text eol=lf
